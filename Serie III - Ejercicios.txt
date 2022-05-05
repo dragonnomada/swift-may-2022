@@ -1,0 +1,40 @@
+Serie III - Iteradores y Arreglos
+
+E206 - Suma 100
+
+Tema: Iteradores
+
+Calcula la suma de los números del 1 al 100 (inclusive el 100)
+
+Es decir, S = 1 + 2 + 3 + ... + 100
+
+---
+
+E207 - Suma 100 de múltiplos del 3 y 5
+
+Tema: Iteradores
+
+Calcula la suma de los números del 1 al 100 (inclusive el 100),
+solo si el número es múltiplo de 3 o 5
+
+Es decir, S = 3 + 5 + 6 + 9 + 10 + ... + 95 + 96 + 99 + 100
+
+PISTA: n % 3 == 0 || n % 5 == 0 determina si un número es múltiplo de 3 o 5
+
+---
+
+E208 - Números Cuadrados
+
+Tema: Arreglos
+
+Crea un arreglo vacío llamado ´cuadrados´ y mediante un iterador
+del 1 al 100 (inclusive) agrega cada número al cuadrado en el arreglo.
+
+ALGORITMO
+
+cuadrados = []
+
+PARA x EN 1...100:
+  AGREGAR x^2 A cuadrados
+
+IMPRIMIR cuadrados

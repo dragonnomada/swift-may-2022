@@ -1,0 +1,43 @@
+Serie I - Condicionales y Valores Opcionales
+
+E201 - Puede votar
+
+Tema: Condicionales (if)
+
+Captura una edad entera del usuario y determina
+si según la edad puede o no votar.
+
+Imprime: PUEDE VOTAR o NO PUEDE VOTAR
+
+---
+
+E202 - Convertidor de Grados Centígrados a Fahrenheit
+
+Tema: Condicionales (if)
+
+Solicta una temperatura en grados centígrados (Celsius)
+y calcula los grados en Fahrenheit.
+
+Imprime: <grados centígrados>°C ~ <grados Fahrenheit>°F
+
+Pista: °C * 9 / 5 + 32 = °F
+
+---
+
+E203 - Determinar el grado de Obesidad
+
+Tema: Condicionales Múltiples (switch)
+
+Capturar la estatura y el peso de un usuario
+y calcular el IMC.
+
+Imprimir: El grado de obesidad según los rangos
+
+imc < 18.5         - BAJO DE PESO
+18.5 <= imc < 24.5 - PESO NORMAL
+24.5 < imc < 30    - SOBREPESO
+30 <= imc          - OBESIDAD
+
+           peso
+IMC = --------------
+	estatura^2

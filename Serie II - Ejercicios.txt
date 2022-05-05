@@ -1,0 +1,36 @@
+Serie II - Ciclos condicionales
+
+E204 - Convertir un número decimal a binario
+
+Tema: Ciclos condicionales (while)
+
+Captura un número entero e implementa el algoritmo.
+
+ALGORITMO:
+
+MIENTRAS n > 0:
+  
+  r = n % 2
+
+  IMPRIMIR r
+
+  n = n / 2
+
+---
+
+E205 - Menú de Opciones
+
+Tema: Ciclos condicionales (repeat-while)
+
+Repite un menú de opciones y captura la opción.
+
+Según la opción realiza la funcionalidad correspondiente.
+
+1. Imprimir Hola
+2. Imprimir x^2
+3. Imprimir la línea dada por el usuario
+4. Salir
+
+
+
+
