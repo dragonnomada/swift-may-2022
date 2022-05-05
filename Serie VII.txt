@@ -1,0 +1,21 @@
+Serie VII
+
+E407 - Robot2D
+
+Tema: Clases
+
+Crea una clase llamada `Robot2D` con los siguientes atributos y métodos
+
+Robot2D
+----------------------
+x: Int
+y: Int
+d: Character
+----------------------
+avanzar()             # Avanza x o y si d es 'N', 'S', 'E' u 'O' (revisa la brújula)
+mirarNorte()          # Asigna d = "N"
+mirarSur()            # Asigna d = "S"
+mirarEste()           # Asigna d = "E"
+mirarOeste()          # Asigna d = "O"
+describir()           # (x, y) [d]
+avanzar(pasos: Int)   # Repite avanzar() tantos pasos se requiera

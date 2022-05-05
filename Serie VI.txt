@@ -1,0 +1,44 @@
+Serie VI
+
+E405 - Estructura Cliente
+
+Tema: Estructuras
+
+Crea una escrutura llamada ´Cliente´ con los siguientes datos y funciones
+
+Cliente
+----------------------
+id: Int
+nombre: String
+correo: String
+activo: Bool
+lineaCredito: Double
+----------------------
+superaLineaCredito(limiteCredito: Double) -> Bool
+describir()
+enviarCorreo(correos: [String])
+
+* En la función correo deben mostrar la lista con el formato:
+  CORREO_CLIENTE CORREO_DESTINO_1
+  CORREO_CLIENTE CORREO_DESTINO_2
+  CORREO_CLIENTE CORREO_DESTINO_3
+  ...
+  CORREO_CLIENTE CORREO_DESTINO_N
+
+---
+
+E406 - Estructura Punto2D
+
+Tema: Estructuras
+
+Crea una estructura llamada `Punto2D`con los siguientes datos y funciones
+
+Punto2D
+-----------------------
+x: Double
+y: Double
+----------------------
+radio() -> Double          # r = sqrt(x * x + y * y)
+angulo() -> Double         # a = atan2(y, x)
+distancia(punto: Punto2D)  # d = sqrt(pow(x - punto.x, 2) + pow(y - punto.y, 2))
+describir()

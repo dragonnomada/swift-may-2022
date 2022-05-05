@@ -1,0 +1,78 @@
+Tuplas
+
+var producto : (nombre: String, precio: Double) 
+
+// Acaplar
+producto = ("Coca Cola", 18.5)
+
+producto.0      // :String = "Coca Cola"
+producto.nombre // nombre:String = "Coca Cola"
+
+// Desacoplar
+let (nombre, precio) : (String, Double) = producto
+
+Funciones
+
+func menores20(valores numeros: [Int]) -> [Int] {
+  var numerosMenores20 : [Int] = []
+
+  for numero in numeros {
+     if numero < 20 {
+         numerosMenores20.append(numero)
+     }
+  }
+
+  return numerosMenores20  
+}
+
+print(menores20(valores: [3, 4, 5, 6, 21, 23, 24, 8])) // [3, 4, 5, 6, 8]
+
+Estructuras
+
+struct Producto {
+  var nombre : String
+  var precio : Double
+  func describir() {
+     print("\(nombre) $\(precio)")
+  }
+}
+
+var producto : Producto = Producto(nombre: "Coca Cola", precio: 18.5)
+
+producto.describir()
+
+# Modelar entidades / registros (no-transaccionales)
+
+Clases
+
+class Tienda {
+  
+   var productos : [Producto] = [] // Atributos no opcionales se obligan a inicializarse
+
+   func buscarProductosConPrecio(min: Double, max: Double) -> [Producto] {
+      var productosEncontrados : [Producto] = []
+
+      for producto in productos {
+          if producto >= min || producto <= max {
+              productosEncontrados.append(producto)
+          }
+      }
+
+      return productosEncontrados
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

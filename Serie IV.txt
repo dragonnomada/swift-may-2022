@@ -1,0 +1,38 @@
+Serie IV
+
+E401 - Estatus HTTP
+
+Tema: Tuplas (acoplamiento)
+
+Crea una tupla que almacene la información de un estatus HTTP
+
+codigo: Int
+statusText: String
+
+Acoplar los siguientes valores en tuplas:
+
+(200, "Ok")
+(304, "Not Modified")
+(400, "Bad Request")
+(403, "Fobidden")
+(404, "Not Found")
+(500, "Internal Server Error")
+(501, "Not Implemented")
+
+---
+
+E402 - Calcular Producto Punto Entre Dos Vectores 3D
+
+Tema: Tuplas (desacoplamiento)
+
+Crea dos tuplas de tipo (Double, Double, Double) y genera 2 puntos en el espacio 3D.
+
+Desacopla la primer tupla como x1, y1, z1
+y la segunda tupla como x2, y2, z2
+
+Calcula el producto punto como:
+
+var dot : Double = x1 * x2 + y1 * y2 + z1 * z2
+
+
+

@@ -1,0 +1,41 @@
+Serie V
+
+E403 - Función Producto Punto Entre Dos Vectores 3D
+
+Tema: Funciones y tuplas
+
+Crea una función llamada ´productoPunto´
+que reciba dos tuplas de tipo (Double, Double, Double)
+y devuelva un Double
+llamadas externamente ´u´ y ´v´
+e internamente ´a´ y ´b´
+
+Desacopla ´a´ en ´x1´, ´y1´, ´z1´
+Desacopla ´b´ en ´x2´, ´y2´, ´z2´
+
+Devuelve el producto punto de ambos vectores (x1 * x2 + y1 * y2 + z1 * z2)
+
+---
+
+E404 - Función Coordenadas Polares
+
+Tema Funciones y Tuplas
+
+Crea una función llamada ´coordenadasPolares´
+que reciba un x: Double, y: Double
+y devuelva una tupla (r: Double, theta: Double)
+
+Calcula r = RAÍZ(x^2 + y^2)
+        theta = arctan(y / x)
+
+* Nota: El arctan es el arco tangente o la inversa a la tangente
+        prueba consulta: `atan2(y, x)`
+
+Imprime las coordenadas polares para los puntos:
+
+  x   y
+---------
+  1,  1
+ -1,  1
+ -1, -1
+  1, -1
