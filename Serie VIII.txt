@@ -1,0 +1,46 @@
+Serie VIII
+
+E701 - Enumeración de Frutas
+
+Tema: Enumeraciones
+
+Crea una enumeración llamada `Frutas` la cual
+esté asociada a un valor entero (Int) según la
+siguiente tabla:
+
+Fruta    | Codigo
+-------- | ------
+Manzana  |  101
+Mango    |  304
+Pera     |  102
+Kiwi     |  301
+Fresa    |  302
+Melón    |  201
+Papaya   |  202
+Guayaba  |  102
+Sandía   |  303
+
+Solicitar un código (entero) al usuario
+y recuperar la fruta asociada a ese valor
+de la enumeración (si existe).
+
+Imprimir la enumeración resultante.
+
+Imprimir según la fruta resultante seleccionada
+por el usuario el precio actual de la fruta.
+
+Definir la función `precioFruta(fruta: Frutas) -> Double`
+calcula los precios según la tabla siguiente:
+
+Fruta    | Codigo
+-------- | ------
+Manzana  |  45.50
+Mango    |  62.99
+Pera     |  31.23
+Kiwi     |  78.91
+Fresa    |  27.55
+Melón    |  32.44
+Papaya   |  17.88
+Guayaba  |  21.13
+Sandía   |  16.89
+

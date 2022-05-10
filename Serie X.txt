@@ -1,0 +1,74 @@
+Serie X
+
+E703 - 
+
+Tema: Subscripts
+
+1. Definir la estructura `Contacto` con los siguientes atributos
+
+	Contacto
+	-------------------------
+	grupo: Int
+	nombre: String
+	correo: String
+	telefono: String
+
+2. Diseñar la clase `ListaContactos` que posea los siguientes
+   atributos, métodos y subscripts y subscripts
+
+	ListaContactos
+	--------------------------------
+	contactos: [Contacto]
+	--------------------------------
+	agregar(contacto: Contacto)
+	agregar(nombre: String, correo: String, telefono: String)
+	--------------------------------
+	subscript(indice: Int) -> Contacto?
+	subscript(correo: String) -> Contacto?
+	subscript(grupo: Int, telefono: String) -> [Contacto]
+
+3. Basarse en los siguiente algoritmos
+
+	A01
+
+	subscript(indice: Int) -> Contacto?
+
+	SI indice < 0 || indice >= TAMAÑO(contactos):
+		REGRESA nil
+
+	let contacto = contactos[indice]
+	
+	---
+
+	A02
+
+	subscript(correo: String) -> Contacto?
+
+	PARA contacto EN contacos:
+		SI contacto.correo = correo:
+			REGRESA contacto
+	
+	REGRESA nil
+
+	---
+
+	A03
+
+	subscript(grupo: Int, telefono: String) -> [Contacto]
+
+	contactosEncontrados : [Contacto] = []
+
+	PARA contacto EN contactos:
+		SI contacto.grupo = grupo && contacto.telefono = telefono:
+			contactosEncontrados AGREGAR contacto
+
+	REGRESA contactosEncontrados
+
+4. Genera una instancia y agrega diversos contactos de prueba
+
+* Al menos dos contactos que tengan el mismo teléfono
+
+5. Prueba cada subscript
+
+* PISTA: contactos[0], contactos["pepe@gmail.com"],
+         contactos[1, "551234567"]

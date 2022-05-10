@@ -1,0 +1,40 @@
+Serie IX
+
+E702 - Robot Móvil
+
+Tema: Enumeraciones, Clases e Inicializadores
+
+1. Crea la enumeración `DireccionRobot : String` con
+
+	Norte = "NORTE"
+	Sur = "SUR"
+	Este = "ESTE"
+	Oeste = "OESTE"
+
+2. Crea la clase Robot con los atributos
+
+	x: Int
+	y: Int
+	d: DireccionRobot
+
+3. Define los siguientes inicializadores
+
+	init() ~ (0, 0, .Norte)
+
+	init(x: Int, y: Int) ~ (x, y, .Norte)
+
+	init(x: Int, y: Int, direccion: DireccionRobot) ~ (x, y, direccion)
+
+	init(direccion: DireccionRobot) ~ (0, 0, direccion)
+
+	init?(direccion: String) ~ (0, 0, direccion)
+
+	deint ~ (0, 0, .Norte)
+
+* Imprime los valores en cada inicializador/deinicializador
+* Investiga cómo funciona init?
+
+4. Crea diversas instancias usando todos los inicializadores posibles
+
+		
+
