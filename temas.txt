@@ -1,0 +1,45 @@
+Variables (var | let)
+
+Variables opcionales (if let)
+
+Funciones (func)
+
+Condicionales (if)
+
+Selectores (switch)
+
+Iteradores (for in)
+
+Ciclos Condicionales Simples (while)
+
+Condicionales Repetidas (repeat while)
+
+Arreglos [...]
+
+Diccionarios [... : ...]
+
+Tuplas (...)
+
+Estructuras
+
+Clases (init | deinit | herencia)
+
+Enumeraciones (valor asociado | tupla)
+
+Clausuras
+
+Extensiones
+
+Protocolos
+
+Manejo de Errores (throws, do-try-catch, if-try?, guard-try?)
+
+---
+
+Conteo de Referencias
+
+Memoria Segura
+
+Genéricos
+
+

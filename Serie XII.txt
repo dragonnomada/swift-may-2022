@@ -1,0 +1,59 @@
+Serie XII
+
+E902 - Extensión Entero
+
+Tema: Extensiones
+
+Genera la extensión sobre `Int` para extender un método
+llamado `random() -> Int`
+
+1. Calcular un entero aleatorio ´a = abs(Date().hashValue)´
+2. Devolver el entero aleatorio módulo ´self´ más `1`
+   PISTA: `return a % self + 1`
+
+Prueba los siguientes resultados:
+
+`print(12.random())`
+`print(100.random())`
+`print(2.random())`
+`print(1.random())`
+`print(0.random())`
+
+E903 - Protocolo Coordenada
+
+Tema: Protocolos
+
+Crear un protocolo llamado `Coordenada`
+que requiera las propropiedades y métodos siguientes:
+
+Coordena
+------------------------------
+var lat: Double { get set }
+var lon: Double { get set }
+func distancia(coordena: Coordenada) -> Double
+	~ sqrt((self.lat - coordena.lat) * (self.lat - coordena.lat) +
+		(self.lon - coordena.lon) * (self.lon - coordena.lon))
+
+Diseña una estructura, clase o enumeración que implemente el protocolo.
+
+Prueba la siguiente función:
+
+func calcularDistanciaMaxima(coordenadas: [Coordenada]) -> Double {
+	var distanciaMaxima: Double = 0
+	for coordena1 in coordenadas {
+		for coordena2 in coordenadas {
+			let distancia = coordena1.distancia(coordena2)
+			if distanciaMaxima < distancia {
+				distanciaMaxima = distancia
+			}
+		}
+	}
+	return distanciaMaxima
+}
+
+print(calcularDistanciaMaxima([
+	obj1,
+	obj2,
+	....
+	objN
+]))

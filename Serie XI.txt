@@ -1,0 +1,36 @@
+Serie XI
+
+E901 - Descripción Automóvil
+
+Tema: Propiedades Virtuales y Computadas
+
+Definir la estructura `Automovil` con las siguientes propiedades simples.
+
+Automovil
+--------------------
+marca: String
+modelo: String
+placas: String // ~ "12345"
+año: Int
+color: String|Enumeración (Blanco, Negro, Rojo, Azul, ...)
+tipo: String|Enumeración (Sedán, Suburvan, Camioneta, Deportivo)
+
+Generar las siguientes propiedades computadas
+
+-----------------------
+descripcion: String { get } 
+	~ "\(descripcionCorta) \(color) tipo \(tipo) <\(placas)>"
+
+descripcionCorta: String { get }
+	~ "[\(año)] \(marca) \(modelo)"
+
+placasAsInt: Int? { get set }
+	get ~ Int(placas)
+	set ~ placas = "\(newValue)"
+
+! BONUS
+
+placasSerie: (letras: String, numero: Int)? { get set }
+	get ~ placas -> (letras, numero) // placas ~ "ABC-1234"
+	set ~ newValue -> (letras, numero) ; placas = "\(letras)-\(numero)"
+
