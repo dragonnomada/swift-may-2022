@@ -36,10 +36,11 @@ Manejo de Errores (throws, do-try-catch, if-try?, guard-try?)
 
 ---
 
+Genéricos
+
+Sobrecarga de Operadores
+
 Conteo de Referencias
 
 Memoria Segura
-
-Genéricos
-
 
