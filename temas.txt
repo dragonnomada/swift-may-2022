@@ -34,8 +34,6 @@ Protocolos
 
 Manejo de Errores (throws, do-try-catch, if-try?, guard-try?)
 
----
-
 Genéricos
 
 Sobrecarga de Operadores
